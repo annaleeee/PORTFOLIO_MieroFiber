@@ -4,15 +4,29 @@
     $(this).find('.list').slideToggle();
 });
 
-//section_4_txt_slide
-// section_4_con 선언하기
-$('.con_txt').hide();
+// m_navbar 햄버거 메뉴
+$('.m_navbar').hide();
 
-$('.section_4_con').mouseover(function(){
-    $('.con_txt').slideUp(600)
-    $(this).children('.con_txt').stop().slideDown(600)
+$('.header_m_menu').click(function(){
+    $('.m_navbar').slideToggle();
+});
+
+$('.dropDown_title').click(function(){
+    $(this).siblings().find('.dropDown_list').slideUp();
+    $(this).find('.dropDown_list').slideToggle();
+});
+
+//section_4_txt_slide
+let imgWrap = $('.section_4_con')
+let txtWrap = $('.con_txt');
+
+txtWrap.hide();
+
+imgWrap.mouseenter(function(){
+    txtWrap.slideUp(600)
+    $(this).children('.con_txt').stop().slideDown(500)
 }).mouseleave(function(){
-    $(this).children('.con_txt').stop().slideUp(600)
+    $(this).children('.con_txt').stop().slideUp(500)
 });
 
 // go-to-top btn

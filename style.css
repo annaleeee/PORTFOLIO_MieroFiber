@@ -27,7 +27,8 @@ header > .inner{
 .header_menu{
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 90%;
+    margin-left: 300px;
 }
 .header_menu_list{
     width: 20%;
@@ -38,8 +39,6 @@ header > .inner{
 }
 .header_menu_list > a{
     color: #fff;
-    text-decoration: none;
-    font-size: .9rem;
     font-weight: 600;
 }
 .header_menu_list .bi-chevron-down{
@@ -66,11 +65,101 @@ header > .inner{
     background-color: #f36f21;
     transition: all .7s;
 }
+.m_navbar{
+    display: none;
+}
+
 @media all and (max-width:767px){
     .header_menu{
         display: none;
     }
+    .header_m_menu{
+        width: 44px;
+        height: 40px;
+        border: 1px solid #eee;
+        background-color: rgba(151, 149, 149, 0.5);
+    }
+    .header_m_menu:hover{
+        background-color: #f36f21;
+        border: none;
+    }
+    .mobile_menu{
+        position: relative;
+        top: 10px;
+        left: 10px;
+    }
+    .mobile_menu span,
+    .mobile_menu::before,
+    .mobile_menu::after{
+        display: block;
+        width: 22px;
+        height: 2px;
+        background-color: #eee;
+    }
+    .mobile_menu::before, 
+    .mobile_menu::after{
+        content: "";
+    }
+    .mobile_menu span{
+        margin: 6px 0;
+    }
+
+    .m_navbar{
+        display: block;
+        width: 90%;
+        padding: 30px 0;
+        background-color: #fff;
+        margin: 10px auto;
+    }
+    .dropDown{
+        margin: 0 auto;
+    }
+    .dropDown_title{
+        text-align: center;
+        line-height: 200%;
+    }
+    .dropDown_title > a{
+        color: #444;
+        font-size: .8rem;
+        font-weight: 600;
+    }
+    .dropDown_title > a:hover{
+        border-bottom: 1px solid #444;
+    }
+    .dropDown_title .bi-chevron-down{
+        color: #444;
+    }
+    .dropDown_list{
+        display: none;
+        font-size: 13px;
+        font-weight: 600;
+        background-color: #eee;
+        border: .5px solid rgba(2, 2, 2, .2);
+    }
+    .dropDown_list > li{
+        color: rgba(0, 0, 0, 0.6);
+        font-weight: 700;
+    }
+    .dropDown_list > li:hover{
+        background-color: #f36f21;
+        color: #fff;
+        transition: all .7s;
+    }
 }
+
+@media all and (min-width:768px) and (max-width:1023px){
+    .header_menu{
+        margin: 60px -40px 0 20px;
+        width: 80%;
+    }
+    .header_menu_list > a{
+        font-size: .9rem;
+    }
+    .list{
+        top: 90px;
+    }
+}
+
 /* ----------header_end------------ */
 .section_1{
     width: 100%;
@@ -109,19 +198,29 @@ header > .inner{
 .sns_con svg:nth-child(2){
     margin: 0 5px 0;
 }
+.sns_con svg:hover{
+    color: #f36f21;
+    background-color: #fff;
+    transition: all .5s;
+}
 .arrow_item{
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     position: absolute;
     bottom: 25%;
     left: 0;
     text-align: center;
-    line-height: 50px;
+    line-height: 45px;
     margin-left: 20px;
-    background-color: #ddd;
+    background-color: #eee;
+}
+.arrow_item svg{
+    width: 38px;
+    height: 38px;
+    color: #555;
 }
 .arrow_item:last-child{
-   margin-left: 80px;
+   margin-left: 70px;
 }
 
 @media all and (max-width:767px){
@@ -199,19 +298,24 @@ header > .inner{
         width: 100%;
         text-align: center;
     }
+    .section_2_left_wrap img{
+        margin: 0 auto;
+        width: 280px;
+    }
     .section_2_txt_wrap > h2{
         font-size: 18px;
         font-weight: 600;
     }
     .section_2_left_wrap iframe{
-        width: 400px;
-        height: 200px;
+        width: 450px;
+        height: 250px;
     }
     .section_2_right_wrap{
         width: 100%;
     }
     .section_2_right_wrap > p{
-        font-size: 18px;
+        font-size: 17px;
+        font-weight: 550;
         margin-top: 30px;
         margin-bottom: 0;
         text-align: center;
@@ -221,6 +325,24 @@ header > .inner{
         text-align: center;
     }
 }
+
+@media all and (min-width:768px) and (max-width:1023px){
+    .section_2 > .inner{
+        flex-direction: column;
+    }
+    .section_2_left_wrap{
+        width: 90%;
+    }
+    .section_2_right_wrap{
+        width: 90%;
+        margin-top: 20px;
+    }
+    .section_2_right_wrap > p{
+        font-size: 20px;
+        font-weight: 550;
+    }
+}
+
 /* ---------section_2_end--------- */
 .section_3{
     background-color: #ffc845;
@@ -277,10 +399,30 @@ header > .inner{
         height: 70px;
     }
 }
+
+@media all and (min-width:768px) and (max-width:1023px){
+    .section_3 > .inner{
+        width: 90%;
+    }
+    .section_3_title{
+        font-size: 2.8rem; /*44.8px*/
+    }
+    .section_3_item_wrap{
+        display: block;
+    }
+    .section_3_item_con > img{
+        width: 350px;
+        height: 350px;
+    }
+    .product_txt{
+        margin-top: -30px;
+    }
+}
+
 /* ---------section_3_end--------- */
 .section_4{
     background-color: #f36f21;
-    padding: 3.75rem 0 2.5rem 2.5rem;
+    padding: 3.75rem 0 3.75rem;
 }
 .section_4 > .inner{
     width: 100%;
@@ -295,8 +437,7 @@ header > .inner{
     columns: auto 3;
 }
 .section_4_con{
-    /* width: 23.33%;
-    position: relative; */
+    position: relative;
 }
 .second{
     margin: 20px 0;
@@ -308,8 +449,7 @@ header > .inner{
     margin: 30px 0;
 }
 .con_txt{
-    width: 250px;
-    height: 80px;
+    width: 100%;
     background-color: #222;
     padding: 15px;
     position: absolute;
@@ -318,25 +458,25 @@ header > .inner{
 }
 .con_txt h4{
     color: #f36f21;
+    font-size: 20px;
+    font-weight: 550;
+    margin-bottom: 8px;
 }
 .con_txt a{
     color: #eee;
+    font-size: 15px;
 }
 @media all and (max-width:767px){
     .section_4{
         padding: 30px;
     }
-    .section_4_txt{
+    .section_4_title{
         text-align: center;
     }
     .section_4_img_wrap{
         width: 100%;
         columns: 1;
         margin: 0 auto;
-    }
-    .section_4_con{
-        width: 100%;
-        position: relative;
     }
     .section_4_con img{
         width: 100%;
@@ -354,46 +494,29 @@ header > .inner{
     .fourth img{
         height: 500px;
     }
-    .con_txt{
-        width: 100%;
+    .con_txt h4{
+        font-size: 18px;
+        margin-bottom: 6px;
     }
-    .header_m_menu{
-        width: 30px;
-        height: 22px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
+    .con_txt a{
+        font-size: 13px;
     }
-    .mobile_menu{
-        display: inline-block;
-        width: 100%;
-        height: 2px;
-        background-color: #666;
+}
+
+@media all and (min-width:768px) and (max-width:1023px){
+    .section_4_title{
+        margin-left: 30px;
+        font-size: 40px;
     }
-    .mobile_menu::before{
-        content: "";
-        width: 100%;
-        height: 2px;
-        background-color: #666;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    .mobile_menu::after{
-        content: "";
-        width: 100%;
-        height: 2px;
-        background-color: #666;
-        position: absolute;
-        bottom: 0;
-        left: 0;
+    .section_4_img_wrap{
+        margin: 0 auto;
+        width: 90%;
     }
 }
 /* ---------section_4_end---------- */
 .footer_menu{
     background-color: #2f2f2f;
-    padding: 3.125rem 0;
+    padding: 3.125rem 0 3.125rem;
 }
 .footer_menu a{
     color: #aaa;
@@ -402,7 +525,7 @@ header > .inner{
     line-height: 200%;
 }
 .footer_menu > .inner{
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -446,6 +569,7 @@ header > .inner{
     }
     .footer_menu > .inner{
         display: block;
+        width: 90%;
         margin: 0;
     }
     .connect_sns > p{
@@ -453,6 +577,29 @@ header > .inner{
     }
     .f_sns_con svg{
         left: 25px;
+    }
+}
+
+@media all and (min-width:768px) and (max-width:1023px){
+    .footer_menu{
+        padding: 3.75rem 0 3.75rem; /*60px*/
+    }
+    .footer_menu > .inner{
+        display: block;
+        width: 90%;
+    }
+    .f_menu{
+        line-height: 180%;
+        margin-bottom: 10px;
+    }
+    .f_menu:nth-child(2) > li:last-child > a{
+        line-height: 15px;
+    }
+    .connect_sns > p{
+        margin: 30px 0;
+    }
+    .f_sns_con{
+        margin: 0;
     }
 }
 /* ---------footer_menu_end---------- */
