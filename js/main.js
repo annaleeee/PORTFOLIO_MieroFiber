@@ -1,5 +1,5 @@
 // header_menu_list
- $('.header_menu_list').click(function(){
+$('.header_menu_list').click(function(){
     $(this).siblings().find('.list').slideUp();
     $(this).find('.list').slideToggle();
 });
@@ -21,15 +21,15 @@ $('.section_1').slick({
     prevArrow: '.arrow_item .bi-chevron-left',
     nextArrow: '.arrow_item .bi-chevron-right',
     dots: true,
-    appendDots: '.main_slide_1 .slide_pager',
+    appendDots: '.section_1_pager .arrow_item .slide_pager',
     autoplay: true,
     autoplaySpeed: 2000,
     speed: 1000,
     fade: true
 })
 
-//section_4_txt_slide
-let imgWrap = $('.section_4_con')
+//section_5_txt_slide
+let imgWrap = $('.section_5_con')
 let txtWrap = $('.con_txt');
 
 txtWrap.hide();
