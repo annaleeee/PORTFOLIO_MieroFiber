@@ -83,12 +83,7 @@ header > .inner{
         background-color: #f36f21;
         border: none;
     }
-    .mobile_menu{
-        position: relative;
-        top: 10px;
-        left: 10px;
-    }
-    .mobile_menu span,
+    .mobile_menu,
     .mobile_menu::before,
     .mobile_menu::after{
         display: block;
@@ -96,12 +91,22 @@ header > .inner{
         height: 2px;
         background-color: #eee;
     }
+    .mobile_menu{
+        position: relative;
+        top: 18px;
+        left: 10px;
+    }
     .mobile_menu::before, 
     .mobile_menu::after{
         content: "";
     }
-    .mobile_menu span{
-        margin: 6px 0;
+    .mobile_menu::before{
+        position: absolute;
+        top: -8px;
+    }
+    .mobile_menu::after{
+        position: absolute;
+        top: 8px;
     }
 
     .m_navbar{
@@ -223,10 +228,10 @@ header > .inner{
     padding: initial;
     height: 100%;
 } */
-.arrow_item{
+.slide_arrow{
     cursor: pointer;
 }
-.bi-chevron-left, .bi-chevron-right{
+.slide_arrow .bi{
     width: 45px;
     height: 45px;
     position: relative;
@@ -240,12 +245,12 @@ header > .inner{
 .bi-chevron-right:hover{
     opacity: .8;
 }
-.arrow_item path{
+.slide_arrow path{
     width: 38px;
     height: 38px;
     color: #555;
 }
-.arrow_item:last-child{
+.slide_arrow:last-child{
     margin-left: 70px;
 }
 .slide_pager ul{
@@ -284,7 +289,7 @@ header > .inner{
     .main_slide_2 .sns_con svg{
         top: 380px;
     }
-    .bi-chevron-left, .bi-chevron-right{
+    .slide_arrow .bi{
         bottom: 150px;
         right: 70px;
     }
@@ -476,9 +481,72 @@ header > .inner{
 .section_4{
     padding: 50px;
 }
+/* .section_4 > .inner{
+    width: 80%;
+} */
 .section_4_title{
     font-size: 45px;
     font-weight: 550;
+}
+.event_slide{
+    margin-top: 25px;
+    display: flex;
+}
+.event_img img{
+    width: 700px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 5px;
+}
+.event_txt{
+    margin-left: 20px;
+    line-height: 400%;
+}
+.event_txt span{
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    padding: 3px;
+    font-weight: 550;
+    opacity: .6;
+}
+.event_txt h3{
+    font-size: 18px;
+    font-weight: 550;
+}
+.event_txt p{
+    font-size: 15px;
+    font-weight: 550;
+    opacity: .6;
+}
+.event_arrow{
+    position: relative;
+    text-indent: -9999px;
+}
+.event_arrow .bi-chevron-left{
+    position: absolute;
+    left: -60px;
+    bottom: 130px;
+}
+.event_arrow .bi-chevron-right{
+    position: absolute;
+    right: -60px;
+    bottom: 130px;
+}
+.event_arrow .bi{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #222;
+    border-radius: 50%;
+    padding: 8px;
+}
+.event_arrow path{
+    width: 38px;
+    height: 38px;
+    color: #555;
+    font-weight: 600;
+}
+.slick_slide{
+    clear: both;
 }
 /* ---------section_4_end--------- */
 

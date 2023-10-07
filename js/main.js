@@ -18,10 +18,20 @@ $('.dropDown_title').click(function(){
 
 // section_1_slide
 $('.section_1').slick({
-    prevArrow: '.arrow_item .bi-chevron-left',
-    nextArrow: '.arrow_item .bi-chevron-right',
+    prevArrow: '.slide_arrow .bi-chevron-left',
+    nextArrow: '.slide_arrow .bi-chevron-right',
     dots: true,
-    appendDots: '.section_1_pager .arrow_item .slide_pager',
+    appendDots: '.section_1_pager .slide_arrow .slide_pager',
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 1000,
+    fade: true
+})
+
+// section_4_slide
+$('.section_4').slick({
+    prevArrow: '.event_arrow .bi-chevron-left',
+    nextArrow: '.event_arrow .bi-chevron-right',
     autoplay: true,
     autoplaySpeed: 2000,
     speed: 1000,
