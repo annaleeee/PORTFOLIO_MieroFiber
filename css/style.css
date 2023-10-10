@@ -224,33 +224,34 @@ header > .inner{
     background-color: #fff;
     transition: all .5s;
 }
-/* .section_1_pager > .inner{
-    padding: initial;
-    height: 100%;
-} */
 .slide_arrow{
     cursor: pointer;
 }
-.slide_arrow .bi{
+.arrow_wrap{
+    position: relative;
+}
+.arrow_wrap .bi{
     width: 45px;
     height: 45px;
-    position: relative;
-    bottom: 200px;
-    right: 10%;
+    position: absolute;
+    bottom: 150px;
+    left: -70px;
     text-align: center;
     line-height: 45px;
     background-color: #eee;
 }
-.bi-chevron-left:hover,
-.bi-chevron-right:hover{
+.arrow_wrap .bi-chevron-right{
+    left: -15px;
+}
+.arrow_wrap .bi:hover{
     opacity: .8;
 }
-.slide_arrow path{
+.arrow_wrap path{
     width: 38px;
     height: 38px;
     color: #555;
 }
-.slide_arrow:last-child{
+.arrow_wrap:last-child{
     margin-left: 70px;
 }
 .slide_pager ul{
@@ -297,7 +298,7 @@ header > .inner{
 /* -------section_1_end--------- */
 .section_2{
     width: 100%;
-    padding: 100px 0 80px;
+    padding: 80px 0 80px;
 }
 .section_2 > .inner{
     max-width: 1340px;

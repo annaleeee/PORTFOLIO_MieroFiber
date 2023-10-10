@@ -29,14 +29,14 @@ $('.section_1').slick({
 })
 
 // section_4_slide
-$('.section_4').slick({
-    prevArrow: '.event_arrow .bi-chevron-left',
-    nextArrow: '.event_arrow .bi-chevron-right',
-    autoplay: true,
-    autoplaySpeed: 2000,
-    speed: 1000,
-    fade: true
-})
+// $('.section_4').slick({
+//     prevArrow: '.event_arrow .bi-chevron-left',
+//     nextArrow: '.event_arrow .bi-chevron-right',
+//     autoplay: true,
+//     autoplaySpeed: 2000,
+//     speed: 1000,
+//     fade: true
+// })
 
 //section_5_txt_slide
 let imgWrap = $('.section_5_con')
