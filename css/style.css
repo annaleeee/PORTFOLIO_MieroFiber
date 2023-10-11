@@ -74,8 +74,8 @@ header > .inner{
         display: none;
     }
     .header_m_menu{
-        width: 44px;
-        height: 40px;
+        width: 48px;
+        height: 44px;
         border: 1px solid #eee;
         background-color: rgba(151, 149, 149, 0.5);
     }
@@ -87,14 +87,14 @@ header > .inner{
     .mobile_menu::before,
     .mobile_menu::after{
         display: block;
-        width: 22px;
+        width: 24px;
         height: 2px;
         background-color: #eee;
     }
     .mobile_menu{
         position: relative;
-        top: 18px;
-        left: 10px;
+        top: 20px;
+        left: 12px;
     }
     .mobile_menu::before, 
     .mobile_menu::after{
@@ -704,7 +704,10 @@ header > .inner{
         margin: 0;
     }
     .connect_sns > p{
-        margin-left: 30px;
+        margin: 20px 0;
+    }
+    .f_sns_con{
+        margin-left: 0;
     }
     .f_sns_con svg{
         left: 25px;
