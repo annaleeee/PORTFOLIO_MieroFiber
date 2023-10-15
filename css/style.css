@@ -1,13 +1,18 @@
 @import url(./reset.css);
+@import url(./side_menu.css);
 
 .inner{
     max-width: 1340px;
     padding: 0 20px;
     width: 100%;
     margin: 0 auto;
+    /*overflow: hidden;*/
 }
 /* -----common----- */
 
+.wrap{
+    overflow: hidden;
+}
 header{
     width: 100%;
     height: 80px;
@@ -290,8 +295,8 @@ header > .inner{
     .main_slide_2 .sns_con svg{
         top: 380px;
     }
-    .slide_arrow .bi{
-        bottom: 150px;
+    .arrow_wrap .bi{
+        bottom: 120px;
         right: 70px;
     }
 }
@@ -481,6 +486,7 @@ header > .inner{
 /* ---------section_3_end--------- */
 .section_4{
     padding: 50px;
+    /* overflow: hidden; */
 }
 /* .section_4 > .inner{
     width: 80%;
@@ -490,11 +496,11 @@ header > .inner{
     font-weight: 550;
 }
 .event_slide{
-    margin-top: 25px;
+    margin: 25px 0 0 40px;
     display: flex;
 }
 .event_img img{
-    width: 700px;
+    width: 600px;
     border: 1px solid lightgray;
     border-radius: 5px;
     padding: 5px;
@@ -525,13 +531,13 @@ header > .inner{
 }
 .event_arrow .bi-chevron-left{
     position: absolute;
-    left: -60px;
-    bottom: 130px;
+    left: 60px;
+    bottom: 600px;
 }
 .event_arrow .bi-chevron-right{
     position: absolute;
-    right: -60px;
-    bottom: 130px;
+    right: 60px;
+    bottom: 600px;
 }
 .event_arrow .bi{
     width: 40px;
@@ -546,9 +552,52 @@ header > .inner{
     color: #555;
     font-weight: 600;
 }
-.slick_slide{
-    clear: both;
+
+@media all and (max-width:767px){
+    .section_4 .inner{
+        padding: 0;
+    }
+    .event_img img{
+        width: 550px;
+    }
+    .event_slide{
+        display: block;
+    }
+    .event_txt{
+        margin-left: 0;
+        line-height: 300%;
+    }
+    .event_txt span{
+        padding: 1px;
+    }
+    .event_txt h3{
+        font-size: 15px;
+        opacity: .8;
+    }
 }
+@media all and (min-width:768px) and (max-width:1023px){
+    .event_slide{
+        display: block;
+    }
+    .event_txt{
+        margin-left: 0;
+        line-height: 300%;
+    }
+    .event_txt span{
+        padding: 1px;
+    }
+    .event_txt h3{
+        font-size: 16px;
+        opacity: .8;
+    }
+    .event_arrow .bi-chevron-left{
+        bottom: 940px;
+    }
+    .event_arrow .bi-chevron-right{
+        bottom: 940px;
+    }
+}
+
 /* ---------section_4_end--------- */
 
 .section_5{
@@ -775,13 +824,13 @@ footer{
 
 #top_btn{
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 25px;
+    right: 44px;
     border-bottom: 3px solid #333;
     line-height: 50px;
     font-size: 35px;
     font-weight: 550;
-    color: #333;
+    color: #444;
     opacity: .8;
     cursor: pointer;
 }
