@@ -18,25 +18,25 @@ $('.dropDown_title').click(function(){
 
 // section_1_slide
 $('.section_1').slick({
-    prevArrow: '.slide_arrow .bi-chevron-left',
-    nextArrow: '.slide_arrow .bi-chevron-right',
+    prevArrow: '.arrow_wrap .bi-chevron-left',
+    nextArrow: '.arrow_wrap .bi-chevron-right',
     dots: true,
     appendDots: '.section_1_pager .slide_arrow .slide_pager',
     autoplay: true,
     autoplaySpeed: 2000,
     speed: 1000,
     fade: true
-})
+});
 
 // section_4_slide
-// $('.section_4').slick({
-//     prevArrow: '.event_arrow .bi-chevron-left',
-//     nextArrow: '.event_arrow .bi-chevron-right',
-//     autoplay: true,
-//     autoplaySpeed: 2000,
-//     speed: 1000,
-//     fade: true
-// })
+$('.section_4 .event_slide_wrap').slick({
+    prevArrow: '.event_arrow .bi-chevron-left',
+    nextArrow: '.event_arrow .bi-chevron-right',
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 500,
+    fade: true
+});
 
 //section_5_txt_slide
 let imgWrap = $('.section_5_con')

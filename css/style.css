@@ -485,22 +485,19 @@ header > .inner{
 }
 /* ---------section_3_end--------- */
 .section_4{
-    padding: 50px;
-    /* overflow: hidden; */
+    padding: 70px 50px;
 }
-/* .section_4 > .inner{
-    width: 80%;
-} */
 .section_4_title{
     font-size: 45px;
     font-weight: 550;
+    color: #333;
 }
-.event_slide{
-    margin: 25px 0 0 40px;
+.section_4 .event_slide{
+    margin: 25px 0 0 15px;
     display: flex;
 }
 .event_img img{
-    width: 600px;
+    width: 700px;
     border: 1px solid lightgray;
     border-radius: 5px;
     padding: 5px;
@@ -519,6 +516,7 @@ header > .inner{
 .event_txt h3{
     font-size: 18px;
     font-weight: 550;
+    color: #333;
 }
 .event_txt p{
     font-size: 15px;
@@ -528,42 +526,45 @@ header > .inner{
 .event_arrow{
     position: relative;
     text-indent: -9999px;
+    cursor: pointer;
 }
 .event_arrow .bi-chevron-left{
     position: absolute;
-    left: 60px;
-    bottom: 600px;
+    left: 3%;
+    bottom: 170px;
 }
 .event_arrow .bi-chevron-right{
     position: absolute;
-    right: 60px;
-    bottom: 600px;
+    right: 3%;
+    bottom: 170px;
 }
 .event_arrow .bi{
     width: 40px;
     height: 40px;
-    border: 2px solid #222;
+    border: 2px solid #454545;
     border-radius: 50%;
     padding: 8px;
 }
-.event_arrow path{
+.event_arrow .bi path{
     width: 38px;
     height: 38px;
     color: #555;
-    font-weight: 600;
+    font-weight: bolder;
 }
 
 @media all and (max-width:767px){
     .section_4 .inner{
         padding: 0;
     }
-    .event_img img{
-        width: 550px;
-    }
-    .event_slide{
+    .section_4 .event_slide{
         display: block;
+        margin-left: 40px;
+    }
+    .event_img img{
+        width: 90%;
     }
     .event_txt{
+        margin-top: 10px;
         margin-left: 0;
         line-height: 300%;
     }
@@ -574,13 +575,25 @@ header > .inner{
         font-size: 15px;
         opacity: .8;
     }
+    .event_arrow .bi-chevron-left{
+        left: 40px;
+        bottom: 220px;
+    }
+    .event_arrow .bi-chevron-right{
+        right: 40px;
+        bottom: 220px;
+    }
 }
 @media all and (min-width:768px) and (max-width:1023px){
-    .event_slide{
+    .section_4 .event_slide{
         display: block;
+        margin-left: 40px;
+    }
+    .event_img img{
+        width: 90%;
     }
     .event_txt{
-        margin-left: 0;
+        margin: 10px auto;
         line-height: 300%;
     }
     .event_txt span{
@@ -591,10 +604,12 @@ header > .inner{
         opacity: .8;
     }
     .event_arrow .bi-chevron-left{
-        bottom: 940px;
+        left: 45px;
+        bottom: 250px;
     }
     .event_arrow .bi-chevron-right{
-        bottom: 940px;
+        right: 45px;
+        bottom: 250px;
     }
 }
 
