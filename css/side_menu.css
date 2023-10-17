@@ -59,15 +59,16 @@
 
 @media all and (max-width:767px){
     .m_navbar{
-        background-color: #000;
-        margin: 10px auto;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #dedede;
+        transition: margin-top .5s;
     }
     .dropDown_title > a{
-        color: #444;
+        color: #333;
     }
     .dropDown_list{
-        font-weight: 550;
-        background-color: #4f4f4f;
+        background-color: #efefef;
         border: .5px solid rgba(163, 91, 62, 0.2);
     }
 }
@@ -83,7 +84,8 @@
 /* ----------header_end------------ */
 .side_page_wrap{
     padding: 30px 0;
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
+    transition: margin-top .5s;
 }
 .side_page_wrap h1{
     font-weight: 550;

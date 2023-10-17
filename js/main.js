@@ -66,3 +66,15 @@ $(window).scroll(function(){
 $('#top_btn').on('click', function(){
     $(window).scrollTop(0);
 });
+
+// side-page_m_menu
+const m_Button = document.querySelector('.side_header .header_m_menu');
+const Content = document.querySelector('.side_page_wrap');
+
+m_Button.addEventListener('click', () => {
+    if (Content.style.marginTop === '') {
+        Content.style.marginTop = '350px';
+    } else {
+        Content.style.marginTop = '';
+    };
+});
