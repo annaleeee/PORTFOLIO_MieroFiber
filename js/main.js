@@ -5,10 +5,11 @@ $('.header_menu_list').click(function(){
 });
 
 // m_navbar 햄버거 메뉴
-$('.m_navbar').hide();
+let navbar = $('.m_navbar');
+navbar.hide();
 
 $('.header_m_menu').click(function(){
-    $('.m_navbar').slideToggle();
+    navbar.slideToggle();
 });
 
 $('.dropDown_title').click(function(){
@@ -39,42 +40,31 @@ $('.section_4 .event_slide_wrap').slick({
 });
 
 //section_5_txt_slide
-let imgWrap = $('.section_5_con')
+let imgWrap = $('.section_5_con');
 let txtWrap = $('.con_txt');
 
 txtWrap.hide();
 
 imgWrap.mouseenter(function(){
-    txtWrap.slideUp(600)
-    $(this).children('.con_txt').stop().slideDown(500)
+    txtWrap.slideUp(600);
+    $(this).children('.con_txt').stop().slideDown(500);
 }).mouseleave(function(){
-    $(this).children('.con_txt').stop().slideUp(500)
+    $(this).children('.con_txt').stop().slideUp(500);
 });
 
 // go-to-top btn
-$('#top_btn').hide();
+let topBtn = $('#top_btn');
+topBtn.hide();
 
 $(window).scroll(function(){
     if($(this).scrollTop()>500){
-        $('#top_btn').fadeIn();
+        topBtn.fadeIn();
     }
     else{
-        $('#top_btn').fadeOut();
+        topBtn.fadeOut();
     }
-})
-
-$('#top_btn').on('click', function(){
-    $(window).scrollTop(0);
 });
 
-// side-page_m_menu
-const m_Button = document.querySelector('.side_header .header_m_menu');
-const Content = document.querySelector('.side_page_wrap');
-
-m_Button.addEventListener('click', () => {
-    if (Content.style.marginTop === '') {
-        Content.style.marginTop = '350px';
-    } else {
-        Content.style.marginTop = '';
-    };
+topBtn.on('click', function(){
+    $(window).scrollTop(0);
 });
