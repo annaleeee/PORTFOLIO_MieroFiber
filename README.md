@@ -19,11 +19,15 @@ JavaScript, jQuery, BOOTSTRAP
 #### [PC]
 <img src="./README_img/preview_pc.PNG">
 
+<img src="./README_img/sidemenu_pc.png" width="500px">
+
 #### [Tablet]
 <img src="./README_img/preview_tablet.png">
 
 #### [Mobile]
 <img src="./README_img/preview_mobile.png">
+
+<img src="./README_img/sidemenu_mobile.png" width="500px">
 
 <br>
 
