@@ -27,7 +27,7 @@ JavaScript, jQuery, BOOTSTRAP
 
 <br>
 
-# ✨ 오류 수정
+# 💥 오류 수정
 
 ## 1️⃣ [logo 위 파란색 선]
 <img src="./README_img/logo_error.png">
