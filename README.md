@@ -16,5 +16,18 @@ JavaScript, jQuery, BOOTSTRAP
 <br>
 <br>
 # 🖥 화면 구성
+#### [PC]
+
+<img src="./UI,UX_img/pc_UI,UX.png" width="90%">
+
+#### [Tablet]
+
+<img src="./UI,UX_img/tablet_UI,UX.png" width="70%">
+
+#### [Mobile]
+
+<img src="./UI,UX_img/mobile_UI,UX.png" width="50%">
+
+<br>
 
 # ✨ 오류 수정
