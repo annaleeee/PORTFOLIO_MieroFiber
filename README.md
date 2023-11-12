@@ -12,7 +12,7 @@
 VISUAL STUDIO CODE, GIT, GITHUB
 
 #### [Development]
-JavaScript, jQuery, BOOTSTRAP
+JavaScript, jQuery, BOOTSTRAP, slick-slider
 <br>
 <br>
 # 🖥 화면 구성
