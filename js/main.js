@@ -71,4 +71,19 @@ $(document).ready(function(){
         $(window).scrollTop(0);
     });
 
+     // top_btn footer에서 색상 변경
+     $(window).scroll(function(){
+        let scrollPosition = $(window).scrollTop();
+        let footerPosition = $('.footer_menu').offset().top - $(window).height(); 
+        let sideMenuTxt = $('.side_menu_txt');
+
+        if (scrollPosition > footerPosition){
+            topBtn.addClass('active');
+            sideMenuTxt.addClass('active');
+        } else {
+            topBtn.removeClass('active');
+            sideMenuTxt.removeClass('active');
+        }
+    });
+
 });
