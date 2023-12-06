@@ -1,196 +1,293 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>식이섬유 이야기</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/side_menu.css">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/side_menu.css" />
+  </head>
+  <body>
     <section>
-        <div class="side_header">
-            <div class="inner">
-                <h1 class="logo">
-                    <a href="#"><img src="./img/logo_white.png" alt="사이드 로고"></a>
-                </h1>
-                <ul class="header_menu">
-                    <li class="header_menu_list">
-                        <a href="#">미에로</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                        <ul class="list">
-                            <li>브랜드 스토리</li>
-                            <li>식이섬유 스토리</li>
-                        </ul>
-                    </li>
-                    <li class="header_menu_list">
-                        <a href="#">제품소개</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                        <ul class="list">
-                            <li>미에로화이바</li>
-                            <li>SPARKLING ZERO</li>
-                            <li>헬씨올리고</li>
-                            <li>헬씨올리고 프로바이오틱스</li>
-                        </ul>
-                    </li>
-                    <li class="header_menu_list">
-                        <a href="#">미에로 스토리</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                        <ul class="list">
-                            <li>TV광고</li>
-                            <li>인쇄광고</li>
-                            <li>프로모션</li>
-                        </ul>
-                    </li>
-                    <li class="header_menu_list">
-                        <a href="#">미에로 이벤트</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                        <ul class="list">
-                            <li>진행중인 이벤트</li>
-                            <li>당첨자 발표</li>
-                        </ul>
-                    </li>
-                    <li class="header_menu_list">
-                        <a href="#">공지사항</a>
-                    </li>
-                </ul>
-                <div class="header_m_menu">
-                    <span class="mobile_menu"></span>
-                </div>
-            </div>
-            <div class="m_navbar">
-                <ul class="dropDown">
-                    <li class="dropDown_title">
-                        <a href="#">미에로</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                        <ul class="dropDown_list">
-                            <li>브랜드 스토리</li>
-                            <li>식이섬유 스토리</li>
-                        </ul>
-                    </li>
-                    <li class="dropDown_title">
-                        <a href="#">제품소개</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                        <ul class="dropDown_list">
-                            <li>미에로화이바</li>
-                            <li>SPARKLING ZERO</li>
-                            <li>헬씨올리고</li>
-                            <li>헬씨올리고 프로바이오틱스</li>
-                        </ul>
-                    </li>
-                    <li class="dropDown_title">
-                        <a href="#">미에로 스토리</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                        <ul class="dropDown_list">
-                            <li>TV광고</li>
-                            <li>인쇄광고</li>
-                            <li>프로모션</li>
-                        </ul>
-                    </li>
-                    <li class="dropDown_title">
-                        <a href="#">미에로 이벤트</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                        <ul class="dropDown_list">
-                            <li>진행중인 이벤트</li>
-                            <li>당첨자 발표</li>
-                        </ul>
-                    </li>
-                    <li class="dropDown_title">
-                        <a href="#">공지사항</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="side_header">
+        <div class="inner">
+          <h1 class="logo">
+            <a href="#"><img src="./img/logo_white.png" alt="사이드 로고" /></a>
+          </h1>
+          <ul class="header_menu">
+            <li class="header_menu_list">
+              <a href="#">미에로</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+              <ul class="list">
+                <li>브랜드 스토리</li>
+                <li>식이섬유 스토리</li>
+              </ul>
+            </li>
+            <li class="header_menu_list">
+              <a href="#">제품소개</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+              <ul class="list">
+                <li>미에로화이바</li>
+                <li>SPARKLING ZERO</li>
+                <li>헬씨올리고</li>
+                <li>헬씨올리고 프로바이오틱스</li>
+              </ul>
+            </li>
+            <li class="header_menu_list">
+              <a href="#">미에로 스토리</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+              <ul class="list">
+                <li>TV광고</li>
+                <li>인쇄광고</li>
+                <li>프로모션</li>
+              </ul>
+            </li>
+            <li class="header_menu_list">
+              <a href="#">미에로 이벤트</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+              <ul class="list">
+                <li>진행중인 이벤트</li>
+                <li>당첨자 발표</li>
+              </ul>
+            </li>
+            <li class="header_menu_list">
+              <a href="#">공지사항</a>
+            </li>
+          </ul>
+          <div class="header_m_menu">
+            <span class="mobile_menu"></span>
+          </div>
         </div>
+        <div class="m_navbar">
+          <ul class="dropDown">
+            <li class="dropDown_title">
+              <a href="#">미에로</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                fill="currentColor"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+              <ul class="dropDown_list">
+                <li>브랜드 스토리</li>
+                <li>식이섬유 스토리</li>
+              </ul>
+            </li>
+            <li class="dropDown_title">
+              <a href="#">제품소개</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                fill="currentColor"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+              <ul class="dropDown_list">
+                <li>미에로화이바</li>
+                <li>SPARKLING ZERO</li>
+                <li>헬씨올리고</li>
+                <li>헬씨올리고 프로바이오틱스</li>
+              </ul>
+            </li>
+            <li class="dropDown_title">
+              <a href="#">미에로 스토리</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                fill="currentColor"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+              <ul class="dropDown_list">
+                <li>TV광고</li>
+                <li>인쇄광고</li>
+                <li>프로모션</li>
+              </ul>
+            </li>
+            <li class="dropDown_title">
+              <a href="#">미에로 이벤트</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                fill="currentColor"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+              <ul class="dropDown_list">
+                <li>진행중인 이벤트</li>
+                <li>당첨자 발표</li>
+              </ul>
+            </li>
+            <li class="dropDown_title">
+              <a href="#">공지사항</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
     <!-- --------header_end------------ -->
     <section class="side_page_wrap">
-        <div class="inner">
-            <h1 class="side_title">당신이 몰랐던 식이섬유</h1>
-            <div class="side_main_img">
-                <img src="./img/side_menu_main.png" alt="식이섬유 이미지">
-            </div>
-            <div class="side_txt_wrap">
-                <div class="side_des">
-                    <h1>식이섬유란?</h1>
-                    <p>사람의 소화효소로 분해되지 않는 성분, 몸 속의 과다한 양분흡수를 막아주고, 
-                        장의 리듬을 조절하며,음식물이 장 속에 머무는 시간을 단축시키는 등 
-                        현대 식생활에 꼭 필요한 물질로 제 7의 영양소로 주목 받고 있음</p>
-                    <span>※ 출처 : 파워푸드 슈퍼푸드 사전</span>
-                </div>
-                <div class="side_func">
-                    <h1>식이섬유 기능</h1>
-                    <ul>
-                        <li>1. 배설활동 촉진, 변비 예방</li>
-                        <li>2. 대사질환에 효과적</li>
-                        <li>3. 콜레스테롤 감소</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="side_img_wrap">
-                <h1>식이섬유를 섭취하려면?</h1>
-                <div class="side_img">
-                    <img src="./img/side_menu_img_1.png" alt="과일 이미지 1">
-                    <ul class="side_list">
-                        <li>딸기 6개</li>
-                        <li>바나나 1개</li>
-                        <li>토마토 2개</li>
-                        <li>미에로 100mL</li>
-                    </ul>
-                </div>
-                <div class="side_img">
-                    <img src="./img/side_menu_img_2.png" alt="과일 이미지 2">
-                    <ul class="side_list">
-                        <li>딸기 13개</li>
-                        <li>바나나 2개</li>
-                        <li>토마토 4개</li>
-                        <li>미에로 210mL</li>
-                    </ul>
-                </div>
-                <div class="side_img">
-                    <img src="./img/side_menu_img_3.png" alt="과일 이미지 3">
-                    <ul class="side_list">
-                        <li>딸기 20개</li>
-                        <li>바나나 4개</li>
-                        <li>오렌지 6개</li>
-                        <li>미에로 350mL</li>
-                    </ul>
-                </div>
-                <div class="side_img side_img_last">
-                    <img src="./img/side_menu_img_4.png" alt="과일 이미지 4">
-                    <ul class="side_list">
-                        <li>딸기 72개</li>
-                        <li>바나나 12개</li>
-                        <li>토마토 24개</li>
-                        <li>미에로 1.2L</li>
-                    </ul>
-                </div>
-                <span>※ 딸기 21g/개, 바나나 100g/개, 토마토 175g/개 기준</span>
-                <span>※ 출처 : 식품교환표(대한영양사협회 2010년판), 한국인영양섭취기준(한국영양학회 2010년 개정판)</span>
-            </div>
+      <div class="inner">
+        <h1 class="side_title">당신이 몰랐던 식이섬유</h1>
+        <div class="side_main_img">
+          <img src="./img/side_menu_main.png" alt="식이섬유 이미지" />
         </div>
+        <div class="side_txt_wrap">
+          <div class="side_des">
+            <h1>식이섬유란?</h1>
+            <p>
+              사람의 소화효소로 분해되지 않는 성분, 몸 속의 과다한 양분흡수를
+              막아주고, 장의 리듬을 조절하며,음식물이 장 속에 머무는 시간을
+              단축시키는 등 현대 식생활에 꼭 필요한 물질로 제 7의 영양소로 주목
+              받고 있음
+            </p>
+            <span>※ 출처 : 파워푸드 슈퍼푸드 사전</span>
+          </div>
+          <div class="side_func">
+            <h1>식이섬유 기능</h1>
+            <ul>
+              <li>1. 배설활동 촉진, 변비 예방</li>
+              <li>2. 대사질환에 효과적</li>
+              <li>3. 콜레스테롤 감소</li>
+            </ul>
+          </div>
+        </div>
+        <div class="side_img_wrap">
+          <h1>식이섬유를 섭취하려면?</h1>
+          <div class="side_img">
+            <img src="./img/side_menu_img_1.png" alt="과일 이미지 1" />
+            <ul class="side_list">
+              <li>딸기 6개</li>
+              <li>바나나 1개</li>
+              <li>토마토 2개</li>
+              <li>미에로 100mL</li>
+            </ul>
+          </div>
+          <div class="side_img">
+            <img src="./img/side_menu_img_2.png" alt="과일 이미지 2" />
+            <ul class="side_list">
+              <li>딸기 13개</li>
+              <li>바나나 2개</li>
+              <li>토마토 4개</li>
+              <li>미에로 210mL</li>
+            </ul>
+          </div>
+          <div class="side_img">
+            <img src="./img/side_menu_img_3.png" alt="과일 이미지 3" />
+            <ul class="side_list">
+              <li>딸기 20개</li>
+              <li>바나나 4개</li>
+              <li>오렌지 6개</li>
+              <li>미에로 350mL</li>
+            </ul>
+          </div>
+          <div class="side_img side_img_last">
+            <img src="./img/side_menu_img_4.png" alt="과일 이미지 4" />
+            <ul class="side_list">
+              <li>딸기 72개</li>
+              <li>바나나 12개</li>
+              <li>토마토 24개</li>
+              <li>미에로 1.2L</li>
+            </ul>
+          </div>
+          <span>※ 딸기 21g/개, 바나나 100g/개, 토마토 175g/개 기준</span>
+          <span
+            >※ 출처 : 식품교환표(대한영양사협회 2010년판),
+            한국인영양섭취기준(한국영양학회 2010년 개정판)</span
+          >
+        </div>
+      </div>
     </section>
 
-    <script type="text/JavaScript" src="https://code.jquery.com/jquery-1.7.min.js"></script>
+    <script
+      type="text/JavaScript"
+      src="https://code.jquery.com/jquery-1.7.min.js"
+    ></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/main.js"></script>
-
-</body>
+  </body>
 </html>
